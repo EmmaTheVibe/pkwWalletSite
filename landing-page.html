@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parkway Wallet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Outfit:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./images/pkwicon.png">
+</head>
+<body>
+    <div class="cookieConsentOverlay">
+        <div class="cookie-box">
+            <div class="cookies">
+                <p class="cookie-txt">By using this website or any of our services, you agree to these <a href="./tos.html" target="_blank">Terms of Service</a>. The website's <a href="./policy.html" target="_blank">Privacy Policy</a> is incorporated by reference into these Terms of Service.</p>
+                <i class="fa-solid fa-x close"></i>
+                <button class="accept">ACCEPT</button>
+            </div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="nav-items">
+            <a href=""><img src="./images/logo.png" alt="" class="logo"></a>
+            <a href="" class="link"><button class="download">Download App</button></a>
+        </div>
+    </div>
+        <section class="hero">
+            <div class="init-txt">
+                <h3>Go Cashless with <br>confidence.</h3>
+                <p>Send and receive money quickly and easily, with no hassles or delays.</p>
+            </div>
+            <div class="top-display">
+                <img src="./images/btn.png" alt="" class="button">
+                <img src="./images/topad.png" alt="" class="iphone-top">
+                <img src="./images/menu.png" alt="" class="menu">
+            </div>
+        </section>
+
+        <section class="features">
+            <h3>Our Amazing features</h3>
+            <div class="mobile-ft">
+                <div class="rcv">
+                    <h4>Receive Money</h4>
+                    <p>Say goodbye to complicated payment methods and delays. Now, you can easily receive money instantly from anyone, anywhere. Simplify your payment collection with YurWallet using a unique account ID created.</p>
+                </div>
+                <div class="tf">
+                    <h4>Transfer Money</h4>
+                    <p>No more worries about delays or failed transfers, with just a few taps you can send money quickly and safely, allowing you to fulfill your financial needs. Enjoy the peace of mind of successful transactions.</p>
+                </div>
+            </div>
+            <div class="pc-ft">
+                <div class="ft-cont" id="features">
+                    <div class="ft-box">
+                        <div class="content receive active clicked">
+                            <h4>Receive Money</h4>
+                            <p class="prg">Say goodbye to complicated payment methods and delays. Now, you can easily receive money instantly from anyone, anywhere. Simplify your payment collection with Parkway Wallet using a unique account ID created.</p>
+                        </div>
+                        <div class="content transfer">
+                            <h4>Transfer Money</h4>
+                            <p class="prg">No more worries about delays or failed transfers, with just a few taps you can send money quickly and safely, allowing you to fulfill your financial needs. Enjoy the peace of mind of successful transactions.</p>
+                        </div>
+                        <div class="indicator"></div>
+                    </div>
+                    <div class="ft-display">
+                        <img src="./images/receive.png" alt="" class="iphone active" id="iphone1">
+                        <img src="./images/transfer.png" alt="" class="iphone" id="iphone2">
+                    </div>
+                </div>
+            </div>
+            <div class="cardbox">
+                <div class="card-txt">
+                    <p class="hd1">Physical Card</p>
+                    <p class="txt1">Our advanced cards allow you to process subscriptions and online or offline payments seamlessly, with a 100% success rate.</p>
+                </div>
+                <img src="./images/pkwcard.png" alt="" class="pkw-card">
+            </div>
+        </section>
+
+        <section class="more-details">
+            <h3>How to create Account</h3>
+            <div class="guide">
+                <div class="bvnbox">
+                    <div class="bvn-txt">
+                        <p class="hd" id="hd1">Verify BVN</p>
+                        <p class="txt" id="txt1">Launch the downloaded application, tap the "Create account" button, input your BVN and validate the BVN information provided.</p>
+                    </div>
+                    <img src="./images/bvn.png" alt="" class="bvn">
+                </div>
+                <div class="passwordbox">
+                    <div class="password-txt">
+                        <p class="hd">Create Password</p>
+                        <p class="txt">Next, create a password for your account and verify it with the OTP sent to you.</p>
+                    </div>
+                    <img src="./images/password.png" alt="" class="password">
+                </div>
+                <div class="pinbox">
+                    <div class="pin-txt">
+                        <p class="hd">Set Transaction PIN</p>
+                        <p class="txt">You will be required to create a four-digit transaction PIN for your account.</p>
+                    </div>
+                    <img src="./images/pin.png" alt="" class="pin">
+                </div>
+            </div>
+        </section>
+
+        <section class="ad-box">
+            <div class="formbox" id="contact">
+                <div class="vidbox">
+                    <video muted autoplay loop class="vid">
+                        <source src="https://youtu.be/h4Ng1tZQf8M" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>Say Hello <br><span><a href="tel:0700007275929">0700007275929</a></span></p>
+                </div>
+                <form action="">
+                    <label for="full-name">
+                        Full name
+                        <input placeholder="Enter your name" id="full-name" type="text" name="full-name" required>
+                    </label>
+                    <label for="email">
+                        Email
+                        <input placeholder="Enter your email address" id="email" type="email" name="email" required>
+                    </label>
+                    <label for="message" class="message">
+                        Message 
+                        <textarea id="message" rows="3" cols="30" name="message" placeholder="Type here..."></textarea>
+                    </label>
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+            <div id="download-box" class="download-box">
+                <h3>Your Key to a cashless future.<br>Download Now!</h3>
+                <div class="apps2">
+                    <a href="https://apps.apple.com/app/parkway-wallet/id6451072719" target="_blank" >
+                        <div class="appstore2 dld">
+                            <img src="./images/apple2.svg" alt="">
+                            <a href="https://apps.apple.com/app/parkway-wallet/id6451072719" target="_blank" ><span>Download on the</span><br>App Store</a>
+                        </div>
+                    <a href="https://play.google.com/store/apps/details?id=com.parkway.yurwallet" target="_blank" >
+                        <div class="playstore2 dld">
+                            <img src="./images/playstr.svg" alt="">
+                            <a href="https://play.google.com/store/apps/details?id=com.parkway.yurwallet" target="_blank" ><span>Download on</span><br>Google Play</a>
+                        </div>
+                    </a>
+                </div>
+           </div>
+           <h3 id="contact2">Some Friends</h3>
+           <div class="friends">
+            <a href="https://swwipe.com/" target="_blank"><img src="./images/swipe.png" alt="" class="swipe"></a>
+            <a href="https://www.bank3d.ng/" target="_blank"><img src="./images/bank3d.png" alt="" class="bank3d"></a>
+            <a href="https://www.readycash.com.ng/" target="_blank"><img src="./images/readycash.png" alt="" class="readycash"></a>
+           </div>
+        </section>
+
+        
+        <section class="footer">
+            <div class="connect">
+                <a href="#"><img src="images/logo.png" alt="" class="logo2"></a>
+                <div class="contact">
+                    <a href="#">Home</a>
+                    <a href="#features">Features</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="socials">
+                    <a href="https://www.facebook.com/parkwayng" target="_blank"><img src="./images/fb.svg" alt="" class="fb"></a>
+                    <a href="https://www.instagram.com/parkway.ng/" target="_blank"><img src="./images/ig.svg" alt="" class=""></a>
+                    <a href="https://twitter.com/ParkwayNG" target="_blank"><img src="./images/twitter.svg" alt=""></a>
+                    <a href="https://www.linkedin.com/company/1199238/admin/" target="_blank"><img src="./images/linkedin.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="docs">
+                <p><i class="fa-regular fa-copyright"></i> Parkway 2023. All rights reserved.</p>
+                <a href="./tos.html" target="_blank" class="terms">Terms of Service</a>
+                <a href="./policy.html" target="_blank">Privacy Policy</a>
+            </div>
+        </section>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+</body>
+</html>
