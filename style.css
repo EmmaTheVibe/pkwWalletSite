@@ -314,38 +314,42 @@ p {
     width: 64px;
     position: relative;
     z-index: 2;
-    bottom: 79px;
-    left: 105px;
+    bottom: 72px;
+    left: 117px;
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
 }
 .iphone-top {
-    width: 285.2px;
-    height: 463px;
+    /* width: 285.2px;
+    height: 463px; */
+    width: 255.2px;
+    height: 443px;
     margin-bottom: -23.5rem;
     z-index: 0;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    left: 0px;
+    left: 10px;
 }
 .menu {
-    width: 160px;
-    height: 90px;
-    margin-bottom: -3.2rem;
+    /* width: 160px;
+    height: 90px; */
+    width: 180px;
+    height: 110px;
+    margin-bottom: -4.2rem;
     z-index: 1;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    right: 105px;
+    right: 75px;
 }
 .show-hero .iphone-top {
-    transform: translateY(-9.6rem);
+    transform: translateY(-10.6rem);
 }
 .show-hero .menu {
     transform: translateY(-1.8rem);
 }
 .show-button .button {
     opacity: 1;
-    transform: scale(1.9, 1.9) translateX(-10.9px);
+    transform: scale(1.9, 1.9) translateX(-15px);
 }
 
 
@@ -424,7 +428,7 @@ p {
         opacity: 1;
     }
 } */
-.ft-box h3 {
+.features h3 {
     font-family: myFont;
     font-style: normal;
     font-weight: 500;
@@ -507,7 +511,7 @@ p {
     transform: translateY(13rem);
     opacity: 1;
 }
-.ft-display {
+/* .ft-display {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -519,7 +523,6 @@ p {
     display: none;
     border-radius: 24px;
     pointer-events: none;
-    /* animation: fadeEffect 1s; */
 }
 .iphone.active {
     display: block;
@@ -528,7 +531,7 @@ p {
     opacity: 1;
     transform: scale(1.4, 1.4);
     box-shadow: 0px 17px 10px rgba(18, 18, 18, 0.2);
-}
+} */
 .cardbox {
     width: 320px;
     height: 370px;
@@ -713,7 +716,7 @@ p {
 }
 #txt1 {
     color: #FAFAFA;
-    width: 100%;
+    width: 95%;
 }
 
 
@@ -1123,9 +1126,9 @@ input{
         align-items: center;
         margin-bottom: 0;
     }
-    /* .ft-box{
+    .ft-box{
         width: 60%;
-    } */
+    }
     .apps-f {
         display: unset;
         width: 296px;
@@ -1229,9 +1232,9 @@ input{
         width: 40%;
         padding-left: 2.45rem;
     }
-    .iphone {
+    /* .iphone {
         margin-top: -4rem;
-    }
+    } */
     .cardbox {
         width: 40rem;
         flex-direction: row;
@@ -1316,9 +1319,9 @@ input{
         font-size: 16px;
         line-height: 23px;
     }
-    /* #txt1 {
+    #txt1 {
         width: 80%;
-    } */
+    }
     .heading {
         font-size: 18px;
     }
@@ -1484,11 +1487,11 @@ input{
     } */
     .button {
         width: 78px;
-        bottom: 100px;
-        left: 127px;
+        bottom: 89.5px;
+        left: 146px;
     }
     .show-button .button {
-        transform: scale(1.9, 1.9) translateX(-13.1px);
+        transform: scale(1.9, 1.9) translateX(-18.4px);
     }
     .iphone-top {
         width: 330px;
@@ -1502,10 +1505,10 @@ input{
         width: 310px;
         height: 175px;
         margin-bottom: -7.5em;
-        right: 75px;
+        right: 45px;
     }
     .show-hero .menu{
-        transform: translateY(-5rem);
+        transform: translateY(-3.7rem);
     }
     
     .features h3 {
@@ -1553,6 +1556,9 @@ input{
     .txt {
         font-size: 16px;
         line-height: 23px;
+    }
+    #txt1 {
+        width: 75%;
     }
     .heading {
         font-size: 20px;
@@ -1752,16 +1758,20 @@ input{
         font-weight: 700;
         margin-bottom: 1.5rem;
     }
-    .prg, .txt {
+    .prg {
+        font-size: 20px;
+        line-height: 33.6px;
+    }
+    .txt {
         font-size: 24px;
         line-height: 33.6px;
     }
-    .ft-display {
-        padding-left: 4.8rem;
+    #txt1 {
+        width: 90%;
     }
-    .show-ft .iphone{
+    /* .show-ft .iphone{
         transform: scale(1.7, 1.7);
-    }
+    } */
     
     .bvnbox{
         height: 318px;
@@ -1973,7 +1983,8 @@ input{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
     .ft-box {
         padding-right: 5px;
@@ -1982,7 +1993,7 @@ input{
         position: relative;
         border-left: 4px solid rgba(77, 77, 77, .3);
     }
-    .ft-box h3 {
+    .features h3 {
         font-weight: 500;
         font-size: 36px;
         padding-bottom: 0;
@@ -2003,6 +2014,14 @@ input{
         color: #121212;
         transition: all .2s ease-in-out;
     }
+    h4 {
+        font-family: "Manrope", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 0;
+    }
     .indicator {
         transition: all 0.2s ease-in-out;
         position: absolute;
@@ -2021,15 +2040,38 @@ input{
         }
     }
     .transfer, .receive {
-        height: 14rem;
+        height: 14.5rem;
     }
     .transfer {
-        bottom: -1rem;
+        bottom: -1.3rem;
     }
     .transfer-prg, .receive-prg {
         width: 100%;
         height: 80%;
         overflow: hidden;
+    }
+    .ft-display {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 6.4rem;
+    }
+    .iphone {
+        width: 9rem;
+        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+        opacity: 0;
+        display: none;
+        border-radius: 24px;
+        pointer-events: none;
+        margin-top: -2rem;
+    }
+    .iphone.active {
+        display: block;
+    }
+    .show-ft .iphone {
+        opacity: 1;
+        transform: scale(1.5, 1.5);
+        box-shadow: 0px 17px 10px rgba(18, 18, 18, 0.2);
     }
     /* .link-cont {
         margin-top: 1.5rem;
@@ -2147,7 +2189,7 @@ input{
         font-weight: 600;
     }
     .ft-display {
-        padding-left: 7.2rem;
+        padding-left: 9rem;
     }
     .show-ft #stores-r{
         transform: translateY(21rem);
@@ -2233,6 +2275,9 @@ input{
         font-size: 24px;
         line-height: 33.6px;
     }
+    #txt1 {
+        width: 85%;
+    }
     .heading {
         font-size: 30px;
         line-height: 20px;
@@ -2285,10 +2330,13 @@ input{
         width: 80%;
     }
     .ft-display {
-        padding-left: 8rem;
+        padding-left: 11.6rem;
     }
     .bvn {
         margin-right: 5rem;
+    }
+    #txt1 {
+        width: 75%;
     }
     .formbox, .download-box, .connect, .docs {
         width: 1000px;
@@ -2396,14 +2444,25 @@ input{
     }
     .ft-cont {
         width: 80rem;   
-        margin-bottom: 0;
+        margin-top: 4rem;
+        margin-bottom: 3rem;
     }
-    .content {
+    /* .content {
         height: 45rem;
-    }
+    } */
     .ft-box {
-        height: 41rem;
+        /* height: 41rem; */
         /* padding-top: 2rem; */
+    }
+    .transfer, .receive {
+        height: 15rem;
+    }
+    .transfer {
+        bottom: 0;
+    }
+    h4 {
+        font-size: 30px;
+        line-height: 68px;
     }
     .link-cont {
         margin-top: 2.5rem;
@@ -2419,7 +2478,7 @@ input{
         line-height: 40px;
     }
     .prg {
-        font-size: 28px;
+        font-size: 26px;
         line-height: 36px;
         margin-top: -27rem;
     }
@@ -2427,8 +2486,8 @@ input{
         transform: translateY(27rem);
     }
     .ft-display {
-        padding-left: 15.1rem;
-        margin-top: -1rem;
+        padding-left: 16rem;
+        margin-top: 0;
     }
     .stores {
         width: 20rem;
@@ -2443,7 +2502,7 @@ input{
         transform: translateY(29rem);
     }
     .show-ft .iphone{
-        transform: scale(1.9, 1.9);
+        transform: scale(1.8, 1.8);
     }
     .cardbox {
         width: 80rem;
@@ -2535,6 +2594,9 @@ input{
         font-size: 30px;
         line-height: 40px;
         width: 85%;
+    }
+    #txt1 {
+        width: 70%;
     }
     
     .ad-box {
