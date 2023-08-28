@@ -91,8 +91,36 @@ function showTransfer() {
     img2.classList.add("active")
 }
 
+// let bannerAnim = true
+// if(bannerAnim){
+    
+// }
+const banners = document.querySelectorAll(".banner")
+function switchBanner(){
+    const subtext = document.querySelectorAll(".subtext")
+    const activeBanner = document.querySelector(".banner.showing");
+    const activeBannerIndex = Array.from(banners).indexOf(activeBanner);
+    const nextBannerIndex = (activeBannerIndex + 1) % banners.length;
 
+    activeBanner.classList.remove("showing");
+    subtext[activeBannerIndex].classList.remove("showing");
+    activeBanner.classList.add("hide");
+    subtext[activeBannerIndex].classList.add("hide");
+    
 
+    banners[nextBannerIndex].classList.add("showing");
+    subtext[nextBannerIndex].classList.add("showing");
+    banners[nextBannerIndex].classList.remove("hide");
+    subtext[nextBannerIndex].classList.remove("hide");
+    // for(let banner of banners){
+    //     if(banner.classList.contains("showing")){
+    //         banner.classList.add("slideOut")
+    //     }
+    // }
+
+}
+setInterval(switchBanner, 5000);
+// setTimeout(switchBanner, 2500);
  
 function switchState(){
     const tabs = document.querySelectorAll(".content")
@@ -143,6 +171,10 @@ const observer = new IntersectionObserver((entries) => {
             setTimeout(() => {
                 entry.target.classList.add('show-button');
             }, 1600)
+            // setTimeout(() => {
+            //     bannerAnim = true;
+            //     console.log("TRUE")
+            // }, 3000)
         }
     })
 })
@@ -227,4 +259,3 @@ function isIOSorAndroid() {
     })
 }
 isIOSorAndroid();
-  
