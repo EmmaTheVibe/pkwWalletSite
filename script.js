@@ -77,18 +77,18 @@ const indicator = document.querySelector(".indicator")
 
 function showReceive() {
     transfer.classList.remove("active")
-    img2.classList.remove("active")
+    // img2.classList.remove("active")
     
     receive.classList.add("active")
-    img1.classList.add("active")
+    // img1.classList.add("active")
 }
 
 function showTransfer() {
     receive.classList.remove("active")
-    img1.classList.remove("active")
+    // img1.classList.remove("active")
                     
     transfer.classList.add("active")
-    img2.classList.add("active")
+    // img2.classList.add("active")
 }
 
 // let bannerAnim = true
@@ -125,17 +125,17 @@ setInterval(switchBanner, 5000);
 function switchState(){
     const tabs = document.querySelectorAll(".content")
     function switcher(){
-        const phone = document.querySelectorAll(".iphone")
+        // const phone = document.querySelectorAll(".iphone")
         const activeTab = document.querySelector(".content.active");
         const activeTabIndex = Array.from(tabs).indexOf(activeTab);
         const nextTabIndex = (activeTabIndex + 1) % tabs.length;
 
         activeTab.classList.remove("active");
-        phone[activeTabIndex].classList.remove("active");
+        // phone[activeTabIndex].classList.remove("active");
 
         indicator.style.top = `calc(calc(110%/2)*${nextTabIndex})`
         tabs[nextTabIndex].classList.add("active");
-        phone[nextTabIndex].classList.add("active");
+        // phone[nextTabIndex].classList.add("active");
         // setTimeout(() => {
         //     phone[nextTabIndex].classList.add("active");
         // }, 100)
