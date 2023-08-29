@@ -243,6 +243,19 @@ const observer6 = new IntersectionObserver((entries) => {
 const hiddenElements6 = document.querySelectorAll('.ad-box');
 hiddenElements6.forEach((el) => observer6.observe(el))
 
+const observer7 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-ftM');
+            navBar.classList.add('bkg');
+        } else {
+            entry.target.classList.remove('show-ftM');
+        }
+    })
+})
+const hiddenElements7 = document.querySelectorAll('.mobile-ft');
+hiddenElements7.forEach((el) => observer7.observe(el))
+
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
     downloadLink.addEventListener("click", () =>{

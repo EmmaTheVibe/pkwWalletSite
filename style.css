@@ -218,18 +218,16 @@ p {
     margin-bottom: 6.5rem;
 }
 .banner {
-    opacity: 0;
+    opacity: 0.3;
 }
 .subtext {
-    opacity: 0;
+    opacity: 0.3;
 }
 .banner.showing {
-    display: block;
     opacity: 1;
     animation: slideUp 1.13s forwards;
 }
 .subtext.showing {
-    display: block;
     opacity: 1;
     animation: slideUp 1.13s forwards;
 }
@@ -299,7 +297,7 @@ p {
         transform: translateY(-13.5rem);
     }
     100% {
-        transform: translateY(-30rem);
+        transform: translateY(-29rem);
     }
 }
 .top-display {
@@ -379,6 +377,15 @@ p {
     font-family: "Manrope", sans-serif;
     font-style: normal;
 }
+.rcv-prg, .tf-prg {
+    /* border: 1px solid red; */
+    overflow: hidden;
+    position: relative;
+    height: 154px;
+}
+.tf-prg {
+    height: 134px;
+}
 .rcv h4, .tf h4 {
     font-weight: 700;
     font-size: 20px;
@@ -390,6 +397,21 @@ p {
     font-size: 16px;
     line-height: 23px;
     color: #121212;
+    position: relative;
+    top: -150px;
+    transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+    opacity: 0;
+}
+.tf p {
+    top: -128px;
+}
+.show-ftM .rcv p {
+    transform: translateY(150px);
+    opacity: 1;
+}
+.show-ftM .tf p {
+    transform: translateY(128px);
+    opacity: 1;
 }
 /* .ft-cont {
     display: flex;
@@ -1167,6 +1189,9 @@ input{
     .mobile-ft {
         width: 40rem;
     }
+    .rcv-prg, .tf-prg {
+        height: 84px;
+    }
     .ft-cont {
         width: 40rem;
         flex-direction: row;
@@ -1460,13 +1485,17 @@ input{
         bottom: 4px;
     }
 
+    /* .footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    } */
     .connect{
         width: 40rem;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 0.8rem;
-        padding-top: 2.5rem;
+        padding-bottom: 2rem;
+        padding-top: 5rem;
     }
     .logo2{
         margin-bottom: unset;
@@ -1481,8 +1510,8 @@ input{
         width: 40rem;
         flex-direction: row;
         justify-content: space-between;
-        padding-top: 0.8rem;
-        padding-bottom: 2.5rem;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
     }
     .docs p {
         margin-bottom: 0;
@@ -1723,20 +1752,32 @@ input{
         height: 16.5rem;
         margin-bottom: 4rem;
     }
+    .bnr1 {
+        bottom: -15.9rem;
+    }
+    .stxt1 {
+        bottom: -16.9rem;
+    }
+    .bnr2 {
+        bottom: -1.9rem;
+    }
+    .stxt2 {
+        bottom: -2.9rem;
+    }
     @keyframes slideUp {
         0% {
             transform: translateY(0%);
         }
         90% {
-            transform: translateY(-15rem);
+            transform: translateY(-15.4rem);
         }
         100% {
-            transform: translateY(-14.5rem);
+            transform: translateY(-14.9rem);
         }
     }
     @keyframes slideOut {
         0% {
-            transform: translateY(-14.5rem);
+            transform: translateY(-14.9rem);
         }
         100% {
             transform: translateY(-30rem);
@@ -1759,6 +1800,9 @@ input{
     .mobile-ft {
         width: 50rem;
         margin-top: 1.8rem;
+    }
+    .rcv-prg, .tf-prg {
+        height: 108px;
     }
     .rcv h4, .tf h4 {
         font-weight: 700;
@@ -2504,8 +2548,8 @@ input{
         height: 30px;
     }
     .download {
-        height: 60px;
-        width: 190px;
+        height: 50px;
+        width: 176px;
         font-size: 18px;
     }
     .init-txt {
@@ -2549,7 +2593,7 @@ input{
             transform: translateY(-21rem);
         }
         100% {
-            transform: translateY(-40rem);
+            transform: translateY(-43rem);
         }
     }
     /* .show-hero .init-txt h3 {
@@ -2952,8 +2996,8 @@ input{
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-top: 2.5rem;
-    padding-bottom: 0.8rem
+    padding-top: 5rem;
+    padding-bottom: 2rem
 }
 .logo2P {
     width: 194.07px;
@@ -2990,8 +3034,8 @@ input{
 }
 .docsP {
     width: 90%;
-    padding-top: 0.8rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -3311,8 +3355,8 @@ td {
     justify-content: space-between;
     align-items: center;
     border-bottom: 0.063rem solid white;
-    padding-top: 2.5rem;
-    padding-bottom: 0.8rem
+    padding-top: 5rem;
+    padding-bottom: 2rem
 }
 .logo2T {
     width: 194.07px;
@@ -3349,8 +3393,8 @@ td {
 }
 .docsT {
     width: 90%;
-    padding-top: 0.8rem;
-    padding-bottom: 2.5rem;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
