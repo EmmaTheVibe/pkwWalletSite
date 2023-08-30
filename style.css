@@ -1881,14 +1881,12 @@ input{
     .vid2 {
         width: 45rem;
         height: 26rem;
-        /* border: 2px solid #F9956B; */
         border-radius: 26px;
         opacity: 1;
     }
     .vid3 {
         width: 45rem;
         height: 26rem;
-        border: 2px solid blue;
         border-radius: 26px;
         opacity: 1;
     }
@@ -1910,12 +1908,10 @@ input{
         transition: linear .1s;
     }
     .closeVid1:hover {
-        color: #F9956B;
-        border-color: #F9956B;
+        transform: scale(1.1, 1.1);
     }
     .closeVid2:hover {
-        color: #F9956B;
-        border-color: #F9956B;
+        transform: scale(1.1, 1.1);
     }
     .iphone {
         width: 9rem;
