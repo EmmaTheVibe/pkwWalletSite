@@ -1987,10 +1987,11 @@ input{
         z-index: 81;
         align-self: center;
         margin-left: -2rem;
+        margin-bottom: -2rem;
     }
     .vid2 {
         width: 45rem;
-        height: 23rem;
+        height: 26rem;
         border: 2px solid #F9956B;
         border-radius: 26px;
         transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
@@ -1999,7 +2000,7 @@ input{
     }
     .vid3 {
         width: 45rem;
-        height: 23rem;
+        height: 26rem;
         border: 2px solid blue;
         border-radius: 26px;
         transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
@@ -2010,7 +2011,7 @@ input{
         font-size: 14px;
         position: relative;
         left: 45.4rem;
-        bottom: 23rem;
+        bottom: 26rem;
         color: #F9956B;
         border: 2px solid #F9956B;
         background-color: #121212;
@@ -2046,11 +2047,6 @@ input{
         transform: scale(1.5, 1.5);
         box-shadow: 0px 17px 10px rgba(18, 18, 18, 0.2);
     }
-    /* .show-ft .vid2 {
-        opacity: 1;
-        transform: scale(4, 4) translateX(-1rem);
-        box-shadow: 0px 17px 10px rgba(18, 18, 18, 0.2);
-    } */
     .play {
         width: 4rem;
         height: 1.5rem;
@@ -2185,9 +2181,11 @@ input{
     }
     .vid2, .vid3 {
         width: 50rem;
+        height: 28rem;
     }
     .closeVid1, .closeVid2 {
         left: 50.4rem;
+        bottom: 28rem;
     }
     .show-ft #stores-r{
         transform: translateY(21rem);
@@ -2476,6 +2474,15 @@ input{
     .ft-display {
         padding-left: 16rem;
         margin-top: 0;
+    }
+    .flow {
+        margin-bottom: -3.5rem;
+    }
+    .vid2, .vid3 {
+        height: 30rem;
+    }
+    .closeVid1, .closeVid2 {
+        bottom: 30rem;
     }
     .stores {
         width: 20rem;
