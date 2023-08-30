@@ -29,7 +29,7 @@ const playVid1 = document.querySelector(".play1")
 const playVid2 = document.querySelector(".play2")
 const Vid1 = document.querySelector(".vid2")
 const Vid2 = document.querySelector(".vid3")
-
+const indicator = document.querySelector(".indicator")
 
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
@@ -77,7 +77,6 @@ $(function () {
     });
 });
 
-const indicator = document.querySelector(".indicator")
 
 function showReceive() {
     transfer.classList.remove("active")
@@ -111,7 +110,6 @@ function switchBanner(){
     activeBanner.classList.add("hide");
     subtext[activeBannerIndex].classList.add("hide");
     
-
     banners[nextBannerIndex].classList.add("showing");
     subtext[nextBannerIndex].classList.add("showing");
     banners[nextBannerIndex].classList.remove("hide");

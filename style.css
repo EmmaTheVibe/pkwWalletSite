@@ -1890,7 +1890,6 @@ input{
         height: 26rem;
         border: 2px solid blue;
         border-radius: 26px;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
         opacity: 1;
     }
     .closeVid1, .closeVid2 {
