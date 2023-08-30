@@ -25,6 +25,8 @@ const cookiesBox = document.querySelector(".cookieConsentOverlay")
 const cookiesDiv = document.querySelector(".cookies")
 const closer = document.querySelector(".close")
 const accept = document.querySelector(".accept")
+const playVid1 = document.querySelector(".play1")
+const playVid2 = document.querySelector(".play2")
 
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
@@ -60,7 +62,7 @@ cookieMessage = () => {
         cookiesBox.classList.add("show-cookies")
         setTimeout(() => {
             cookiesBox.style.display = "block";
-        }, 1500);
+        }, 100);
     }
 }
 window.addEventListener("load", cookieMessage)
@@ -77,18 +79,22 @@ const indicator = document.querySelector(".indicator")
 
 function showReceive() {
     transfer.classList.remove("active")
-    // img2.classList.remove("active")
+    img2.classList.remove("active")
+    playVid2.classList.remove("active")
     
     receive.classList.add("active")
-    // img1.classList.add("active")
+    img1.classList.add("active")
+    playVid1.classList.add("active")
 }
 
 function showTransfer() {
     receive.classList.remove("active")
-    // img1.classList.remove("active")
+    img1.classList.remove("active")
+    playVid1.classList.remove("active")
                     
     transfer.classList.add("active")
-    // img2.classList.add("active")
+    img2.classList.add("active")
+    playVid2.classList.add("active")
 }
 
 // let bannerAnim = true
@@ -125,17 +131,20 @@ setInterval(switchBanner, 5000);
 function switchState(){
     const tabs = document.querySelectorAll(".content")
     function switcher(){
-        // const phone = document.querySelectorAll(".iphone")
+        const phone = document.querySelectorAll(".iphone")
+        const play = document.querySelectorAll(".play")
         const activeTab = document.querySelector(".content.active");
         const activeTabIndex = Array.from(tabs).indexOf(activeTab);
         const nextTabIndex = (activeTabIndex + 1) % tabs.length;
 
         activeTab.classList.remove("active");
-        // phone[activeTabIndex].classList.remove("active");
+        phone[activeTabIndex].classList.remove("active");
+        play[activeTabIndex].classList.remove("active");
 
         indicator.style.top = `calc(calc(110%/2)*${nextTabIndex})`
         tabs[nextTabIndex].classList.add("active");
-        // phone[nextTabIndex].classList.add("active");
+        phone[nextTabIndex].classList.add("active");
+        play[nextTabIndex].classList.add("active");
         // setTimeout(() => {
         //     phone[nextTabIndex].classList.add("active");
         // }, 100)
@@ -185,8 +194,12 @@ const observer2 = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show-ft');
+            setTimeout(() => {
+                entry.target.classList.add('show-play');
+            }, 1600)
             navBar.classList.add('bkg');
         } else {
+            entry.target.classList.remove('show-play');
             entry.target.classList.remove('show-ft');
         }
     })
@@ -255,6 +268,24 @@ const observer7 = new IntersectionObserver((entries) => {
 })
 const hiddenElements7 = document.querySelectorAll('.mobile-ft');
 hiddenElements7.forEach((el) => observer7.observe(el))
+
+const closeVid1 = document.querySelector(".closeVid1")
+const vidOverlay1 = document.querySelector(".vidOverlay")
+closeVid1.addEventListener("click", () => {
+    vidOverlay1.style.display = "none";
+})
+playVid1.addEventListener("click", () => {
+    vidOverlay1.style.display = "flex";
+})
+
+const closeVid2 = document.querySelector(".closeVid2")
+const vidOverlay2 = document.querySelector(".vidOverlay2")
+closeVid2.addEventListener("click", () => {
+    vidOverlay2.style.display = "none";
+})
+playVid2.addEventListener("click", () => {
+    vidOverlay2.style.display = "flex";
+})
 
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
