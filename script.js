@@ -27,6 +27,9 @@ const closer = document.querySelector(".close")
 const accept = document.querySelector(".accept")
 const playVid1 = document.querySelector(".play1")
 const playVid2 = document.querySelector(".play2")
+const Vid1 = document.querySelector(".vid2")
+const Vid2 = document.querySelector(".vid3")
+
 
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
@@ -75,7 +78,6 @@ $(function () {
 });
 
 const indicator = document.querySelector(".indicator")
-// indicator.classList.add("slide")
 
 function showReceive() {
     transfer.classList.remove("active")
@@ -97,10 +99,6 @@ function showTransfer() {
     playVid2.classList.add("active")
 }
 
-// let bannerAnim = true
-// if(bannerAnim){
-    
-// }
 const banners = document.querySelectorAll(".banner")
 function switchBanner(){
     const subtext = document.querySelectorAll(".subtext")
@@ -118,15 +116,8 @@ function switchBanner(){
     subtext[nextBannerIndex].classList.add("showing");
     banners[nextBannerIndex].classList.remove("hide");
     subtext[nextBannerIndex].classList.remove("hide");
-    // for(let banner of banners){
-    //     if(banner.classList.contains("showing")){
-    //         banner.classList.add("slideOut")
-    //     }
-    // }
-
 }
 setInterval(switchBanner, 5000);
-// setTimeout(switchBanner, 2500);
  
 function switchState(){
     const tabs = document.querySelectorAll(".content")
@@ -145,9 +136,6 @@ function switchState(){
         tabs[nextTabIndex].classList.add("active");
         phone[nextTabIndex].classList.add("active");
         play[nextTabIndex].classList.add("active");
-        // setTimeout(() => {
-        //     phone[nextTabIndex].classList.add("active");
-        // }, 100)
     }
     const switchAnim = setInterval(switcher, 4000);
     tabs.forEach(active => {
@@ -180,10 +168,6 @@ const observer = new IntersectionObserver((entries) => {
             setTimeout(() => {
                 entry.target.classList.add('show-button');
             }, 1600)
-            // setTimeout(() => {
-            //     bannerAnim = true;
-            //     console.log("TRUE")
-            // }, 3000)
         }
     })
 })
@@ -273,18 +257,22 @@ const closeVid1 = document.querySelector(".closeVid1")
 const vidOverlay1 = document.querySelector(".vidOverlay")
 closeVid1.addEventListener("click", () => {
     vidOverlay1.style.display = "none";
+    Vid1.src = " "
 })
 playVid1.addEventListener("click", () => {
     vidOverlay1.style.display = "flex";
+    Vid1.src = 'https://www.youtube.com/embed/JCEsKuKm-lA?si=n5-l1BRZa89WI9Eh&amp;loop=1&amp;playlist=u2aC4R9XU_M&amp;controls=1&amp;mute=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1&amp;modestbranding=0&amp;fs=1'
 })
 
 const closeVid2 = document.querySelector(".closeVid2")
 const vidOverlay2 = document.querySelector(".vidOverlay2")
 closeVid2.addEventListener("click", () => {
     vidOverlay2.style.display = "none";
+    Vid2.src = " "
 })
 playVid2.addEventListener("click", () => {
     vidOverlay2.style.display = "flex";
+    Vid2.src = 'https://www.youtube.com/embed/JCEsKuKm-lA?si=n5-l1BRZa89WI9Eh&amp;loop=1&amp;playlist=u2aC4R9XU_M&amp;controls=1&amp;mute=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1&amp;modestbranding=0&amp;fs=1'
 })
 
 function isIOSorAndroid() {

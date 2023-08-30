@@ -78,13 +78,13 @@ p {
     position: absolute;
     right: 14px;
     top: 12px;
-    color: #374151;
+    color: #FFFFFF;
     cursor: pointer;
     transition: linear .1s;
 }
 
 .accept {
-    border: 2px solid #374151;
+    border: 2px solid #FFFFFF;
     border-radius: 12px;
     background: none;
     width: 100%;
@@ -94,7 +94,7 @@ p {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    color: #374151;
+    color: #FFFFFF;
     transition: linear .1s;
 }
 .show-cookies.cookieConsentOverlay {
@@ -211,7 +211,6 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid red; */
     margin-bottom: 6.5rem;
 }
 .banner {
@@ -430,12 +429,6 @@ p {
     margin-top: -13rem;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
     opacity: 0;
-}
-.stores {
-    display: none;
-}
-.apps-f {
-    display: none;
 }
 .show-ft .prg {
     transform: translateY(13rem);
@@ -875,26 +868,6 @@ input{
 .ndic {
     width: 6.5rem;
 }
-.friends{
-    width: 256.87px;
-    height: 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.swipe {
-    width: 73.69px;
-    height: 18px;
-}
-.bank3d {
-    width: 61.56px;
-    height: 20px;
-}
-.readycash {
-    width: 89.62px;
-    height: 20px;
-}
 
 
 .footer{
@@ -1104,39 +1077,6 @@ input{
         font-weight: 500;
         font-size: 12px;
     }
-    .stores {
-        width: 15rem;
-        display: unset;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-        opacity: 0;
-    }
-    #stores-r {
-        margin-top: -22rem;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-        opacity: 0;
-    }
-    #stores-t {
-        margin-top: -22rem;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-        opacity: 0;
-    }
-    #stores-f {
-        margin-top: -22rem;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
-        opacity: 0;
-    }
-    .show-ft #stores-r{
-        transform: translateY(13rem);
-        opacity: 1;
-    }
-    .show-ft #stores-t{
-        transform: translateY(13rem);
-        opacity: 1;
-    }
-    .show-ft #stores-f{
-        transform: translateY(13rem);
-        opacity: 1;
-    }
     .ft-display {
         margin-bottom: -1.5rem;
         width: 40%;
@@ -1154,7 +1094,6 @@ input{
     }
     .card-txt {
         margin-bottom: 0;
-        /* padding-top: 1rem; */
         padding-left: 5rem;
         bottom: -1.2rem;
     }
@@ -1349,9 +1288,13 @@ input{
     .docs a {
         padding-bottom: 0;
     }
+    .policy {
+        position: absolute;
+        right: 35px;
+    }
     .terms {
         position: absolute;
-        right: 85px;
+        right: 122px;
     }
 }
 
@@ -1511,25 +1454,6 @@ input{
         font-size: 20.66px;
         line-height: 33px;
     }
-    .friends{
-        width: 380.87px;
-        height: 35px;
-    }
-    .swipe {
-        width: 93.69px;
-        height: 25px;
-    }
-    .bank3d {
-        width: 81.56px;
-        height: 28px;
-    }
-    .readycash {
-        width: 109.62px;
-        height: 28px;
-    }
-    #contact2 {
-        font-size: 26px;
-    }
     .connect {
         width: 43rem;
     }
@@ -1664,22 +1588,6 @@ input{
     .content {
         margin-bottom: 0;
     }
-    .stores {
-        width: 285px;
-    }
-    .show-ft #stores-r{
-        transform: translateY(14rem);
-        opacity: 1;
-    }
-    .show-ft #stores-t{
-        transform: translateY(14rem);
-        opacity: 1;
-    }
-    .show-ft #stores-f{
-        transform: translateY(14rem);
-        opacity: 1;
-    }
-
     .hd {
         font-size: 30px;
         font-weight: 700;
@@ -1798,27 +1706,6 @@ input{
     .apps2 {
         margin-top: -2rem;
     }
-    #contact2 {
-        font-weight: 500;
-        font-size: 36px;
-        margin-bottom: 1rem;
-    }
-    .friends{
-        width: 480.87px;
-        height: 40px;
-    }
-    .swipe {
-        width: 122.81px;
-        height: 30px;
-    }
-    .bank3d {
-        width: 92.34px;
-        height: 30px;
-    }
-    .readycash {
-        width: 134.43px;
-        height: 30px;
-    }
     
     .logo2 {
         width: 154.07px;
@@ -1839,8 +1726,11 @@ input{
     .docs a {
         font-size: 14px;
     }
+    .policy {
+        right: 40px;
+    }
     .terms {
-        right: 100px;
+        right: 140px;
     }
 }
 
@@ -1864,11 +1754,10 @@ input{
         font-size: 18px;
     }
     .accept:hover {
-        border-color: #FFFFFF;
-        color: #FFFFFF;
+        transform: scale(1.02, 1.02);
     }
     .close:hover {
-        color: #FFFFFF;
+        transform: scale(1.1, 1.1);
     }
     .download:hover {
         background-color: rgb(246, 162, 127);
@@ -1992,10 +1881,9 @@ input{
     .vid2 {
         width: 45rem;
         height: 26rem;
-        border: 2px solid #F9956B;
+        /* border: 2px solid #F9956B; */
         border-radius: 26px;
         opacity: 1;
-        /* pointer-events: none; */
     }
     .vid3 {
         width: 45rem;
@@ -2004,15 +1892,14 @@ input{
         border-radius: 26px;
         transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
         opacity: 1;
-        /* pointer-events: none; */
     }
     .closeVid1, .closeVid2 {
         font-size: 14px;
         position: relative;
         left: 45.4rem;
         bottom: 26rem;
-        color: #F9956B;
-        border: 2px solid #F9956B;
+        color: #FFFFFF;
+        border: 2px solid #FFFFFF;
         background-color: #121212;
         cursor: pointer;
         border-radius: 50%;
@@ -2021,12 +1908,15 @@ input{
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: linear .1s;
     }
     .closeVid1:hover {
-        color: rgba(249, 149, 107, .8);
+        color: #F9956B;
+        border-color: #F9956B;
     }
     .closeVid2:hover {
-        color: rgba(249, 149, 107, .8);
+        color: #F9956B;
+        border-color: #F9956B;
     }
     .iphone {
         width: 9rem;
@@ -2049,7 +1939,6 @@ input{
     .play {
         width: 4rem;
         height: 1.5rem;
-        /* border: 1px solid rgba(255, 255, 255, 0.6); */
         border-radius: 4px;
         border: none;
         color: rgba(255, 255, 255, 0.6);
@@ -2065,6 +1954,7 @@ input{
         font-family: "Manrope", sans-serif;
         font-size: 10px;
         font-weight: 500;
+        text-decoration: underline;
         transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
         opacity: 0;
         display: none;
@@ -2167,7 +2057,6 @@ input{
     }
     .receive, .transfer {
         height: 12rem;
-        /* border: 1px solid red; */
     }
     .receive {
         margin-bottom: 3rem;
@@ -2185,15 +2074,6 @@ input{
     .closeVid1, .closeVid2 {
         left: 50.4rem;
         bottom: 28rem;
-    }
-    .show-ft #stores-r{
-        transform: translateY(21rem);
-    }
-    .show-ft #stores-t{
-        transform: translateY(21rem);
-    }
-    .show-ft #stores-f{
-        transform: translateY(21rem);
     }
     .cardbox {
         width: 900px;
@@ -2301,11 +2181,7 @@ input{
     .ft-cont {
         width: 1000px;
     }
-    .vid2, .vid3 {
-        /* width: 900px; */
-    }
     .closeVid1, .closeVid2 {
-        /* left: 906.4px; */
         width: 2.3rem;
         height: 2.3rem;
     }
@@ -2483,18 +2359,6 @@ input{
     .closeVid1, .closeVid2 {
         bottom: 30rem;
     }
-    .stores {
-        width: 20rem;
-    }
-    .show-ft #stores-r{
-        transform: translateY(29rem);
-    }
-    .show-ft #stores-t{
-        transform: translateY(29rem);
-    }
-    .show-ft #stores-f{
-        transform: translateY(29rem);
-    }
     .show-ft .iphone{
         transform: scale(1.8, 1.8);
     }
@@ -2655,26 +2519,6 @@ input{
     .license-box {
         justify-content: space-between;
     }
-    #contact2 {
-        font-size: 48px;
-        margin-bottom: 1.5rem;
-    }
-    .friends{
-        width: 580.87px;
-        height: 50px;
-    }
-    .swipe {
-        width: 152.81px;
-        height: 38px;
-    }
-    .bank3d {
-        width: 122.34px;
-        height: 38px;
-    }
-    .readycash {
-        width: 164.43px;
-        height: 38px;
-    }
     .formbox, .download-box, .connect {
         width: 80rem;
     }
@@ -2697,8 +2541,11 @@ input{
     .docs a {
         font-size: 18px;
     }
+    .policy {
+        right: 54px;
+    }
     .terms {
-        right: 123px;
+        right: 184px;
     }
 }
 
@@ -2887,9 +2734,13 @@ input{
     line-height: 1rem;
     color: #FFFFFF;
 }
+.policyP {
+    position: absolute;
+    right: 54px;
+}
 .termsP {
     position: absolute;
-    right: 125px;
+    right: 184px;
 }
 
 @media screen and (max-width: 1400px){
@@ -2916,8 +2767,11 @@ input{
     .docsP a {
         font-size: 14px;
     }
+    .policyP {
+        right: 40px;
+    }
     .termsP {
-        right: 95px;
+        right: 140px;
     }
 }
 
@@ -2953,8 +2807,11 @@ input{
     .docsP a {
         font-size: 12px;
     }
+    .policyP {
+        right: 35px;
+    }
     .termsP {
-        right: 85px;
+        right: 122px;
     }
 } 
 
@@ -3018,6 +2875,9 @@ input{
     }
     .logo2P {
         margin-bottom: 13px;
+    }
+    .policyP {
+        position: unset;
     }
     .termsP {
         position: unset;
@@ -3246,9 +3106,13 @@ td {
     line-height: 1rem;
     color: #FFFFFF;
 }
+.policyT {
+    position: absolute;
+    right: 54px;
+}
 .termsT {
     position: absolute;
-    right: 125px;
+    right: 184px;
 }
 
 
@@ -3279,8 +3143,11 @@ td {
     .docsT a {
         font-size: 14px;
     }
+    .policyT {
+        right: 40px;
+    }
     .termsT {
-        right: 95px;
+        right: 140px;
     }
 }
 @media screen and (max-width: 1100px){
@@ -3353,8 +3220,11 @@ td {
     .docsT a {
         font-size: 12px;
     }
+    .policyT {
+        right: 35px;
+    }
     .termsT {
-        right: 85px;
+        right: 122px;
     }
 } 
 
@@ -3437,7 +3307,332 @@ td {
     .logo2T {
         margin-bottom: 13px;
     }
+    .policyT {
+        position: unset;
+    }
     .termsT {
+        position: unset;
+    }
+}
+
+
+.navbarF {
+    height: 110px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background-color: #FFFFFF;
+}
+.nav-itemsF {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoF {
+    width: 164.31px;
+    height: 30px;
+}
+.downloadF {
+    border: none;
+    font-family: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 21.86px;
+    color: #F7743B;
+    cursor: pointer;
+}
+
+
+.heroF {
+    width: 100%;
+    background-image: url(./images/par.svg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-bottom: 2rem;
+}
+.overlayF {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.overlayF h1 {
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 65px;
+    line-height: 84.5px;
+    color: #121212;
+}
+.overlayF p{
+    font-weight: "Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 33.6px;
+    color: #121212;
+}
+.bodF {
+    width: 90%;
+    font-family:"Manrope", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    text-align: start; 
+    color: #121212;
+    display: flex;
+    flex-direction: column;
+}
+.boddF a {
+    font-weight: 800;
+    color: #121212;
+}
+
+
+.boddF h5{
+    font-family: myFont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 34.96px;
+    color: #121212;
+}
+
+.boddF {
+    font-family: "Manrope", sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 32.4px;
+    color: #121212;
+}
+
+.footerF {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #121212;
+    position: relative;
+}
+.connectF {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.063rem solid white;
+    padding-top: 5rem;
+    padding-bottom: 2rem
+}
+.logo2F {
+    width: 194.07px;
+    height: 33px;
+}
+.contactF {
+    width: 285px;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialsF {
+    width: 145px;
+    height: 1.875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.socialsF img{
+    width: 24px;
+    height: 24px;
+}
+.contactF a{
+    text-decoration: none;
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.563rem;
+    color: #FFFFFF;
+}
+.docsF {
+    width: 90%;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.docsF p {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1rem;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+.docsF a {
+    font-family: 'Manrope', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1rem;
+    color: #FFFFFF;
+}
+.termsF {
+    position: absolute;
+    right: 125px;
+}
+
+@media screen and (max-width: 1400px){
+    .navbarF {
+        height: 90px;
+    }
+    .logoF {
+        width: 134.31px;
+        height: 24px;
+    }
+    .logo2F {
+        width: 154.07px;
+        height: 27.53px;
+    }
+    .contactF {
+        width: 241px;
+    }
+    .contactF a {
+        font-size: 16px;
+    }
+    .docsF p {
+        font-size: 14px;
+    }
+    .docsF a {
+        font-size: 14px;
+    }
+    .termsF {
+        right: 95px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    
+    .overlayF {
+       width: 90%;
+    }
+    .bodF {
+        width: 90%;
+        margin-left: 0px;
+    }
+    .nav-itemsF {
+        width: 90%;
+    }
+    .logoF, .logo2F {
+        width: 100.73px;
+        height: 18px;
+    }
+    .connectF {
+        width: 90%;
+    }
+    .contactF {
+        width: 197px;
+        height: 1.875rem;
+    }
+    .contactF a {
+        font-size: 14px;
+    }
+    .docsF p {
+        font-size: 12px;
+    }
+    .docsF a {
+        font-size: 12px;
+    }
+    .termsF {
+        right: 85px;
+    }
+} 
+
+
+@media screen and (max-width: 650px){
+    .navbarF {
+        height: 60px;
+    }
+    .downloadF {
+        font-size: 12px;
+    }
+    .overlayF h1 {
+        font-size: 38px;
+        line-height: 49.4px;
+    }
+    .overlayF p {
+        font-size: 18px;
+        line-height: 28.8px;
+    }
+    .boddF h5 {
+        font-size: 18px;
+        line-height: 27.36px;
+    }
+    .boddF {
+        font-size: 16px;
+        line-height: 28.8px;
+    }
+    .footerF {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .connectF {
+        width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
+    .contactF {
+        margin-bottom: 13px;
+    }
+    .contactF a{
+        font-size: 12px;
+        line-height: 0.563rem;
+    }
+    .docsF {
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .docsF p{
+        margin-bottom: 1rem;
+        font-size: 12px;
+    }
+    .docsF a{
+        font-size: 12px;
+        padding-bottom: 1rem;
+    }
+    .logo2F {
+        margin-bottom: 13px;
+    }
+    .termsF {
         position: unset;
     }
 }
