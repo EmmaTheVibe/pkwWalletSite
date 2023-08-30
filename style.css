@@ -1994,7 +1994,6 @@ input{
         height: 26rem;
         border: 2px solid #F9956B;
         border-radius: 26px;
-        transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
         opacity: 1;
         /* pointer-events: none; */
     }
