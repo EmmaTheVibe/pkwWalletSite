@@ -259,7 +259,7 @@ closeVid1.addEventListener("click", () => {
 })
 playVid1.addEventListener("click", () => {
     vidOverlay1.style.display = "flex";
-    Vid1.src = 'https://www.youtube.com/embed/JCEsKuKm-lA?si=n5-l1BRZa89WI9Eh&amp;loop=1&amp;playlist=u2aC4R9XU_M&amp;controls=1&amp;mute=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1&amp;modestbranding=0&amp;fs=1'
+    Vid1.src = 'https://www.youtube.com/embed/JK3TPjEpaho?si=I6BgoyHHFTIfyF_n&amp;loop=1&amp;playlist=JK3TPjEpaho&amp;controls=1&amp;mute=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1&amp;modestbranding=0&amp;fs=1'
 })
 
 const closeVid2 = document.querySelector(".closeVid2")
@@ -270,7 +270,7 @@ closeVid2.addEventListener("click", () => {
 })
 playVid2.addEventListener("click", () => {
     vidOverlay2.style.display = "flex";
-    Vid2.src = 'https://www.youtube.com/embed/JCEsKuKm-lA?si=n5-l1BRZa89WI9Eh&amp;loop=1&amp;playlist=u2aC4R9XU_M&amp;controls=1&amp;mute=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1&amp;modestbranding=0&amp;fs=1'
+    Vid2.src = 'https://www.youtube.com/embed/Mk2E1ICQySw?si=k0l1QBh5UvuVTV0e&amp;loop=1&amp;playlist=Mk2E1ICQySw&amp;controls=1&amp;mute=1&amp;showinfo=0&amp;frameborder=0&amp;autoplay=1&amp;modestbranding=0&amp;fs=1'
 })
 
 function isIOSorAndroid() {
