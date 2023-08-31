@@ -1733,7 +1733,7 @@ input{
 
 @media screen and (min-width: 1024px){
     .cookies {
-        height: 100px;
+        height: 80px;
         padding-left: 5%;
         padding-right: 5%;
         flex-direction: row;
@@ -2229,7 +2229,7 @@ input{
 
 @media screen and (min-width: 1500px){
     .cookies {
-        height: 120px;
+        height: 100px;
         padding-left: 5%;
         padding-right: 5%;
         flex-direction: row;
