@@ -261,11 +261,11 @@ p {
 }
 .stxt1 {
     bottom: -15rem;
-    width: 85%;
+    width: 90%;
 }
 .stxt2 {
     bottom: -4.62rem;
-    width: 90%;
+    width: 85%;
 }
 .show-hero .apps {
     transform: translateY(-19rem);
@@ -981,15 +981,11 @@ input{
     .init-txt h3 {
         width: 100%;
     }
-    .bnr2 {
-        bottom: -5.05rem;
-    }
     .stxt1 {
-        width: 100%;
+        width: 75%;
     }
     .stxt2 {
-        bottom: -6.05rem;
-        width: 75%;
+        width: 100%;
     }
 
     .features{
@@ -2009,11 +2005,11 @@ input{
     }
     .stxt1 {
         bottom: -20.5rem;
-        width: 100%;
+        width: 680px;
     }
     .stxt2 {
         bottom: -3.8rem;
-        width: 680px;
+        width: 100%;
     }
     @keyframes slideUp {
         0% {
@@ -2288,10 +2284,10 @@ input{
     }
     .stxt1 {
         bottom: -22.6rem;
-        width: 75%;
     }
     .stxt2 {
         bottom: -4rem;
+        width: 75%;
     }
     @keyframes slideUp {
         0% {
