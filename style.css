@@ -242,7 +242,6 @@ p {
     position: relative;
 }
 .init-txt p {
-    width: 85%;
     font-family: "Manrope", sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -262,9 +261,11 @@ p {
 }
 .stxt1 {
     bottom: -15rem;
+    width: 85%;
 }
 .stxt2 {
     bottom: -2.25rem;
+    width: 90%;
 }
 .show-hero .apps {
     transform: translateY(-19rem);
@@ -974,21 +975,21 @@ input{
     }
     .init-txt {
         width: 380px;
-        height: 10.5rem;
+        height: 11.5rem;
         margin-bottom: 5.5rem;
     }
     .init-txt h3 {
         width: 100%;
     }
-    .init-txt p {
-        width: 100%;
-    }
     .bnr2 {
         bottom: -5.05rem;
     }
+    .stxt1 {
+        width: 100%;
+    }
     .stxt2 {
         bottom: -6.05rem;
-        width: 100%;
+        width: 75%;
     }
 
     .features{
@@ -1316,19 +1317,20 @@ input{
     .init-txt p {
         font-size: 24px;
         line-height: 32px;
-        width: 90%;
     }
     .bnr1 {
         bottom: -15.5rem;
     }
     .stxt1 {
         bottom: -16.5rem;
+        width: 90%;
     }
     .bnr2 {
         bottom: -1.5rem;
     }
     .stxt2 {
         bottom: -2.5rem;
+        width: 90%;
     }
     @keyframes slideUp {
         0% {
@@ -1933,11 +1935,12 @@ input{
         box-shadow: 0px 17px 10px rgba(18, 18, 18, 0.2);
     }
     .play {
-        width: 4.5rem;
+        width: 4.7rem;
         height: 1.5rem;
         border-radius: 4px;
         border: none;
         color: rgba(255, 255, 255, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.6);
         position: absolute;
         z-index: 3;
         top: 8rem;
@@ -1997,7 +2000,6 @@ input{
     .init-txt p  {
         font-size: 28px;
         line-height: 44px;
-        width: 100%;
     }
     .bnr1 {
         bottom: -19.5rem;
@@ -2007,10 +2009,11 @@ input{
     }
     .stxt1 {
         bottom: -20.5rem;
+        width: 100%;
     }
     .stxt2 {
         bottom: -3.8rem;
-        width: 100%;
+        width: 680px;
     }
     @keyframes slideUp {
         0% {
@@ -2276,7 +2279,6 @@ input{
     .init-txt p {
         font-size: 32px;
         line-height: 46px;
-        width: 75%;
     }
     .bnr1 {
         bottom: -21.6rem;
@@ -2286,6 +2288,7 @@ input{
     }
     .stxt1 {
         bottom: -22.6rem;
+        width: 75%;
     }
     .stxt2 {
         bottom: -4rem;
