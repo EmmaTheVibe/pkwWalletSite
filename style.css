@@ -2011,7 +2011,7 @@ input{
         font-family: "Manrope", sans-serif;
         font-size: 10px;
         font-weight: 500;
-        text-decoration: underline;
+        /* text-decoration: underline; */
         transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
         overflow: hidden;
 
