@@ -211,6 +211,7 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 6.5rem;
+    cursor: pointer;
 }
 .banner {
     opacity: 0.3;
@@ -297,15 +298,17 @@ p {
     display: flex;
     align-items: end;
     justify-content: center;
+    /* border: 1px solid red; */
 }
 .button {
     width: 64px;
     position: relative;
     z-index: 2;
-    bottom: 72px;
-    left: 117px;
+    bottom: 119px;
+    left: 245px;
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
+    /* border: 1px solid red; */
 }
 .iphone-top {
     width: 255.2px;
@@ -314,7 +317,7 @@ p {
     z-index: 0;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    left: 10px;
+    left: 70px;
 }
 .menu {
     width: 180px;
@@ -323,17 +326,17 @@ p {
     z-index: 1;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    right: 75px;
+    right: 240px;
 }
 .show-hero .iphone-top {
-    transform: translateY(-10.6rem);
+    transform: translateY(-13.6rem);
 }
 .show-hero .menu {
     transform: translateY(-1.8rem);
 }
 .show-button .button {
     opacity: 1;
-    transform: scale(1.9, 1.9) translateX(-15px);
+    transform: scale(1.9, 1.9) translateX(  15px);
 }
 
 
@@ -1374,17 +1377,19 @@ input{
         }
     }
     .button {
-        width: 78px;
-        bottom: 89.5px;
-        left: 146px;
+        width: 80px;
+        bottom: 89px;
+        left: 390px;
     }
     .show-button .button {
-        transform: scale(1.9, 1.9) translateX(-18.4px);
+        opacity: 1;
+        transform: scale(1.9, 1.9) translateX(18.6px);
     }
     .iphone-top {
         width: 330px;
         height: 561.48px;
         bottom: -8rem;
+        left: 170px;
     }
     .show-hero .iphone-top{
         transform: translateY(-15rem);
@@ -1393,7 +1398,7 @@ input{
         width: 310px;
         height: 175px;
         margin-bottom: -7.5em;
-        right: 45px;
+        right: 345px;
     }
     .show-hero .menu{
         transform: translateY(-3.7rem);
@@ -1905,10 +1910,10 @@ input{
     .transfer, .receive {
         height: 16.3rem;
     }
-    .receive {
+    .transfer {
         top: -0.5rem;
     }
-    .transfer {
+    .receive {
         bottom: -1.2rem;
     }
     .transfer-prg, .receive-prg {
@@ -1981,6 +1986,7 @@ input{
         pointer-events: none;
         margin-top: -2rem;
         position: relative;
+        border: 1px solid red;
     }
     .iphone.active {
         display: block;
@@ -2121,11 +2127,11 @@ input{
     .receive, .transfer {
         height: 15rem;
     }
-    .receive {
+    .transfer {
         margin-bottom: 1.5rem;
         top: 0;
     }
-    .transfer {
+    .receive {
         bottom: -0.9rem;
     }
     .ft-display {
@@ -2411,11 +2417,11 @@ input{
     .transfer, .receive {
         height: 17.1rem;
     }
-    .receive {
+    .transfer {
         top: -1rem;
         margin-bottom: 0.5rem;
     }
-    .transfer {
+    .receive {
         bottom: -0.5rem;
     }
     .play {

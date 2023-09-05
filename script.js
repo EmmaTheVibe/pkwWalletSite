@@ -30,6 +30,8 @@ const playVid2 = document.querySelector(".play2")
 const Vid1 = document.querySelector(".vid2")
 const Vid2 = document.querySelector(".vid3")
 const indicator = document.querySelector(".indicator")
+const Banner1 = document.querySelector(".bnr1")
+const Banner2 = document.querySelector(".bnr2")
 
 setCookie = (cName, cValue, expDays) => {
     let date = new Date();
@@ -97,7 +99,6 @@ function showTransfer() {
     img2.classList.add("active")
     playVid2.classList.add("active")
 }
-
 const banners = document.querySelectorAll(".banner")
 function switchBanner(){
     const subtext = document.querySelectorAll(".subtext")
@@ -115,8 +116,18 @@ function switchBanner(){
     banners[nextBannerIndex].classList.remove("hide");
     subtext[nextBannerIndex].classList.remove("hide");
 }
-setInterval(switchBanner, 5000);
- 
+let bannerAnim = setInterval(switchBanner, 5000);
+for (let banner of banners){
+    banner.addEventListener("mouseover", ()=> {
+        clearInterval(bannerAnim)
+        console.log("paused")
+    })
+    banner.addEventListener("mouseleave", ()=> {
+        bannerAnim = setInterval(switchBanner, 5000)
+        console.log("played")
+    })
+}
+
 function switchState(){
     const tabs = document.querySelectorAll(".content")
     function switcher(){
