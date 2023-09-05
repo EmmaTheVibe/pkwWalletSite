@@ -211,7 +211,8 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 6.5rem;
-    cursor: pointer;
+    /* cursor: pointer;
+    border: 1px solid red; */
 }
 .banner {
     opacity: 0.3;
@@ -229,9 +230,11 @@ p {
 }
 .banner.hide {
     animation: slideOut 1s;
+    pointer-events: none;
 }
 .subtext.hide {
     animation: slideOut 1s;
+    pointer-events: none;
 }
 .init-txt h3 {
     font-style: normal;
@@ -241,6 +244,7 @@ p {
     color: #FFFFFF;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1.13s;
     position: relative;
+    cursor: pointer;
 }
 .init-txt p {
     font-family: "Manrope", sans-serif;
@@ -251,6 +255,7 @@ p {
     color: #B3B3B3;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
     position: relative;
+    cursor: pointer;
 }
 .bnr1 {
     width: 90%;
@@ -298,7 +303,6 @@ p {
     display: flex;
     align-items: end;
     justify-content: center;
-    /* border: 1px solid red; */
 }
 .button {
     width: 64px;
@@ -308,7 +312,6 @@ p {
     left: 245px;
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
-    /* border: 1px solid red; */
 }
 .iphone-top {
     width: 255.2px;

@@ -100,21 +100,21 @@ function showTransfer() {
     playVid2.classList.add("active")
 }
 const banners = document.querySelectorAll(".banner")
+const subtexts = document.querySelectorAll(".subtext")
 function switchBanner(){
-    const subtext = document.querySelectorAll(".subtext")
     const activeBanner = document.querySelector(".banner.showing");
     const activeBannerIndex = Array.from(banners).indexOf(activeBanner);
     const nextBannerIndex = (activeBannerIndex + 1) % banners.length;
 
     activeBanner.classList.remove("showing");
-    subtext[activeBannerIndex].classList.remove("showing");
+    subtexts[activeBannerIndex].classList.remove("showing");
     activeBanner.classList.add("hide");
-    subtext[activeBannerIndex].classList.add("hide");
+    subtexts[activeBannerIndex].classList.add("hide");
     
     banners[nextBannerIndex].classList.add("showing");
-    subtext[nextBannerIndex].classList.add("showing");
+    subtexts[nextBannerIndex].classList.add("showing");
     banners[nextBannerIndex].classList.remove("hide");
-    subtext[nextBannerIndex].classList.remove("hide");
+    subtexts[nextBannerIndex].classList.remove("hide");
 }
 let bannerAnim = setInterval(switchBanner, 5000);
 for (let banner of banners){
@@ -125,6 +125,16 @@ for (let banner of banners){
     banner.addEventListener("mouseleave", ()=> {
         bannerAnim = setInterval(switchBanner, 5000)
         console.log("played")
+    })
+}
+for (let subtext of subtexts){
+    subtext.addEventListener("mouseover", ()=> {
+        clearInterval(bannerAnim)
+        console.log("paused2")
+    })
+    subtext.addEventListener("mouseleave", ()=> {
+        bannerAnim = setInterval(switchBanner, 5000)
+        console.log("played2")
     })
 }
 
