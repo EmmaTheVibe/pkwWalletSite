@@ -453,6 +453,7 @@ p {
     background-color: #121212;
     border-radius: 24px;
     position: relative;
+    overflow: hidden;
 }
 .card-txt {
     width: 100%;
@@ -461,6 +462,8 @@ p {
     font-family: "Manrope", sans-serif;
     margin-bottom: 1rem;
     position: relative;
+    left: -100%;
+    transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 /* addition 1 start */
 .remark {
@@ -499,6 +502,14 @@ p {
 .pkw-card {
     width: 284px;
     position: relative;
+    right: -100%;
+    transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
+}
+.show-card .card-txt {
+    left: 0;
+}
+.show-card .pkw-card {
+    right: 0;
 }
 
 
@@ -1986,7 +1997,6 @@ input{
         pointer-events: none;
         margin-top: -2rem;
         position: relative;
-        border: 1px solid red;
     }
     .iphone.active {
         display: block;

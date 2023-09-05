@@ -262,6 +262,18 @@ const observer7 = new IntersectionObserver((entries) => {
 const hiddenElements7 = document.querySelectorAll('.mobile-ft');
 hiddenElements7.forEach((el) => observer7.observe(el))
 
+const observer8 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-card');
+        } else {
+            entry.target.classList.remove('show-card');
+        }
+    })
+})
+const hiddenElements8 = document.querySelectorAll('.cardbox');
+hiddenElements8.forEach((el) => observer8.observe(el))
+
 const closeVid1 = document.querySelector(".closeVid1")
 const vidOverlay1 = document.querySelector(".vidOverlay")
 closeVid1.addEventListener("click", () => {
