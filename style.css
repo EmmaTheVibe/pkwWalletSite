@@ -308,9 +308,9 @@ p {
     width: 64px;
     position: relative;
     z-index: 2;
-    bottom: 87px;
+    bottom: 88px;
     left: 185px;
-    opacity: 0;
+    /* opacity: 0; */
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
     /* border: 1px solid red; */
 }
