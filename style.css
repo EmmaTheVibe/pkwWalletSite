@@ -308,10 +308,11 @@ p {
     width: 64px;
     position: relative;
     z-index: 2;
-    bottom: 119px;
-    left: 245px;
+    bottom: 87px;
+    left: 185px;
     opacity: 0;
     transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
+    /* border: 1px solid red; */
 }
 .iphone-top {
     width: 255.2px;
@@ -320,7 +321,7 @@ p {
     z-index: 0;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    left: 70px;
+    left: 10px;
 }
 .menu {
     width: 180px;
@@ -329,10 +330,10 @@ p {
     z-index: 1;
     position: relative;
     transition: cubic-bezier(.03,1.11,.96,1.12) 1s;
-    right: 240px;
+    right: 85px;
 }
 .show-hero .iphone-top {
-    transform: translateY(-13.6rem);
+    transform: translateY(-11.6rem);
 }
 .show-hero .menu {
     transform: translateY(-1.8rem);
@@ -1392,8 +1393,8 @@ input{
     }
     .button {
         width: 80px;
-        bottom: 89px;
-        left: 390px;
+        bottom: 113px;
+        left: 230px;
     }
     .show-button .button {
         opacity: 1;
@@ -1403,16 +1404,16 @@ input{
         width: 330px;
         height: 561.48px;
         bottom: -8rem;
-        left: 170px;
+        /* left: 170px; */
     }
     .show-hero .iphone-top{
-        transform: translateY(-15rem);
+        transform: translateY(-16.5rem);
     }
     .menu{
         width: 310px;
         height: 175px;
         margin-bottom: -7.5em;
-        right: 345px;
+        right: 55px;
     }
     .show-hero .menu{
         transform: translateY(-3.7rem);
@@ -1577,7 +1578,7 @@ input{
         opacity: 1;
     }
     .top-display {
-        margin-top: 6rem;
+        margin-top: 7.5rem;
     }
     
     .features {
@@ -2125,7 +2126,7 @@ input{
         opacity: 1;
     }
     .top-display {
-        margin-top: 5.8rem;
+        margin-top: 7.3rem;
     }
     .nav-items{
         width: 900px;

@@ -116,14 +116,14 @@ function switchBanner(){
     banners[nextBannerIndex].classList.remove("hide");
     subtexts[nextBannerIndex].classList.remove("hide");
 }
-let bannerAnim = setInterval(switchBanner, 5000);
+let bannerAnim = setInterval(switchBanner, 4000);
 for (let banner of banners){
     banner.addEventListener("mouseover", ()=> {
         clearInterval(bannerAnim)
         console.log("paused")
     })
     banner.addEventListener("mouseleave", ()=> {
-        bannerAnim = setInterval(switchBanner, 5000)
+        bannerAnim = setInterval(switchBanner, 4000)
         console.log("played")
     })
 }
@@ -133,7 +133,7 @@ for (let subtext of subtexts){
         console.log("paused2")
     })
     subtext.addEventListener("mouseleave", ()=> {
-        bannerAnim = setInterval(switchBanner, 5000)
+        bannerAnim = setInterval(switchBanner, 4000)
         console.log("played2")
     })
 }
