@@ -510,11 +510,9 @@ p {
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
 .show-card .card-txt {
-    /* left: 0; */
     animation: textSlide 1s forwards;
 }
 .show-card .pkw-card {
-    /* right: 0; */
     animation: cardSlide 1s forwards;
 }
 @keyframes textSlide {
