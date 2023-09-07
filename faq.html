@@ -14,7 +14,7 @@
     <div class="navbarF">
       <div class="nav-itemsF">
           <a href="./landing-page.html"><img src="./images/parkway.svg" alt="" class="logoF"></a>
-          <a href="" class="linkF downloadF">Download App!</a>
+          <a href=" " class="linkF downloadF">Download App!</a>
       </div>
     </div>
     <section class="heroF">
@@ -276,7 +276,7 @@
             downloadLinkF.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
             return 'Android';
           } else if (/iphone|ipad|ipod/.test(userAgent)) {
-            downloadLinkF.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
+            downloadLinkF.href = "https://apps.apple.com/us/app/piggyvest-save-invest-today/id1263117994"
             return 'iOS';
           } else {
             downloadLinkF.href = "./landing-page.html#download-box"
@@ -284,7 +284,8 @@
             }
         })
       }
-      isIOSorAndroid();
+      const deviceType = isIOSorAndroid();
+      console.log(`This device is running ${deviceType}.`);
     </script>
   </body>
 </html>
