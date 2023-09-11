@@ -211,8 +211,6 @@ p {
     flex-direction: column;
     align-items: center;
     margin-bottom: 6.5rem;
-    /* cursor: pointer;
-    border: 1px solid red; */
 }
 .banner {
     opacity: 0.3;
@@ -442,7 +440,6 @@ p {
 }
 .cardbox {
     width: 320px;
-    /* height change 1*/
     height: 416px;
     padding-top: 2.5rem;
     padding-bottom: 2rem;
@@ -466,17 +463,13 @@ p {
     left: -100%;
     transition: cubic-bezier(.03,1.11,.96,1.13) 1s;
 }
-/* addition 1 start */
 .remark {
     margin-top: 1rem;
     width: 114px;
     height: 2rem;
-    border: 1px solid #FFFFFF;
+    border: none;
     border-radius: 8px;
     color: #F9956B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .remark p {
     margin-bottom: 0;
@@ -484,7 +477,6 @@ p {
     font-weight: 500;
     font-size: 14px;
 }
-/* addition 1 end */
 .hd1 {
     font-weight: 700;
     font-size: 16px;
@@ -496,7 +488,6 @@ p {
     font-size: 14px;
     line-height: 19.6px;
     color: #C2C2C2;
-    /* width change 8 */
     width: 76%;
     margin-bottom: 0;
 }
@@ -1150,12 +1141,8 @@ input{
     .card-txt {
         margin-bottom: 0;
         padding-left: 5rem;
-        
-        /* subtraction 1. Removing the bottom*/
-        /* bottom: -1.2rem; */
     }
     .txt1 {
-        /* width change 1 */
         width: 88%;
     }
     .pkw-card {
@@ -1422,7 +1409,6 @@ input{
         width: 330px;
         height: 561.48px;
         bottom: -8rem;
-        /* left: 170px; */
     }
     .show-hero .iphone-top{
         transform: translateY(-16.5rem);
@@ -1456,15 +1442,10 @@ input{
     }
     .card-txt {
         margin-bottom: 0;
-
-        /* subtraction 2. Removing the bottom*/
-        /* bottom: -1.6rem; */
     }
     .txt1 {
-        /* width change 2 */
         width: 75%;
     }
-
 
     .more-details h3 {
         font-size: 26px;
@@ -1624,10 +1605,7 @@ input{
     }
     .cardbox {
         width: 50rem; 
-
-        /* height change 2 */
         height: 330px;
-
         padding-bottom: 0;
         padding-right: 1rem;
         margin-bottom: 4.5rem;
@@ -1635,22 +1613,20 @@ input{
     }
     .card-txt {
         margin-bottom: 0;
-        /* padding change */
         padding-top: 0.5rem;
         padding-left: 3rem;
+        bottom: -0.7rem;
     }
     .hd1 {
         font-size: 30px;
         line-height: 42px;
     }
     .txt1 {
-        /* width change 3 */
         width: 88%;
         font-size: 24px;
         line-height: 33.6px;
     }
 
-    /* addition 2 start*/
     .remark {
         width: 150px;
         height: 3rem;
@@ -1658,14 +1634,11 @@ input{
     .remark p {
         font-size: 16px;
     }
-    /* addition 2 end */
 
     .pkw-card {
-        margin-top: 1rem;
+        margin-top: 1.2rem;
         width: 420px;
         height: 264.29px;
-
-        /* bottom change 1 */
         bottom: 6px;
         
     }
@@ -1953,8 +1926,6 @@ input{
         width: 100%;
         height: 100%;
         overflow: hidden;
-        /* border: 1px solid red; */
-        /* addition */
         display: flex;
         flex-direction: column;
         position: relative;
@@ -2036,11 +2007,7 @@ input{
         color: rgba(77, 77, 77, .3);
         border: 1px solid rgba(77, 77, 77, .3);
         position: relative;
-        /* subtraction */
-        /* position: absolute;
-        z-index: 3; */
         top: 12.5rem;
-        
         background: none;
         display: flex;
         flex-direction: row;
@@ -2049,13 +2016,9 @@ input{
         font-family: "Manrope", sans-serif;
         font-size: 10px;
         font-weight: 500;
-        /* text-decoration: underline; */
         transition: cubic-bezier(.03,1.11,.96,1.2) .1s;
         overflow: hidden;
-
-        /* subtraction */
         opacity: 0;
-        /* display: none; */
     }
     .play i {
         margin-right: 4px;
@@ -2069,7 +2032,6 @@ input{
         margin-top: 2.8rem;
     }
     .txt1 {
-        /* width change 4 */
         width: 85%;
     }
     .show-play .play {
@@ -2193,16 +2155,13 @@ input{
     .card-txt {
         margin-bottom: 0;
         padding-left: 5rem;
-
-        /* addition 3 */
-        /* bottom: 4px; */
+        bottom: -0.8rem;
     }
     .hd1 {
         font-size: 30px;
         line-height: 42px;
     }
     .txt1 {
-        /* width change 5 */
         width: 88%;
         font-size: 24px;
         line-height: 33.6px;
@@ -2306,12 +2265,9 @@ input{
     .card-txt {
         margin-bottom: 0;
         padding-left: 7rem;
-
-        /* subtraction 3 */
-        bottom: -0.4rem;
+        bottom: -1.5rem;
     }
     .txt1 {
-        /* width change 6 */
         width: 78%;
     }
     .pkw-card {
@@ -2505,9 +2461,7 @@ input{
     .card-txt {
         margin-bottom: 0;
         padding-left: 10rem;
-
-        /* bottom change 2 */
-        bottom: -0.8rem;
+        bottom: -1.7rem;
     }
     .hd1 {
         font-size: 40px;
@@ -2516,11 +2470,8 @@ input{
     .txt1 {
         font-size: 30px;
         line-height: 40px;
-
-        /* width change 7 */
         width: 75%;
     }
-    /* addition */
     .remark {
         width: 160px;
         height: 3.5rem;
@@ -2633,8 +2584,6 @@ input{
     }
     label, input, #message {
         font-size: 24px;
-
-        /* addition 4 */
         line-height: 30px;
     }
     input {
