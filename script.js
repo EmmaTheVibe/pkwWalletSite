@@ -309,15 +309,22 @@ playVid2.addEventListener("click", () => {
 function isIOSorAndroid() {
     const userAgent = navigator.userAgent.toLowerCase();
     downloadLink.addEventListener("click", () =>{
-        if (/android/.test(userAgent)) {
-            downloadLink.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
-            return 'Android';
-        } else if (/iphone|ipad|ipod/.test(userAgent)) {
-            downloadLink.href = "https://apps.apple.com/ng/app/parkway-wallet/id6451072719/"
+        // if (/android/.test(userAgent)) {
+        //     downloadLink.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
+        //     return 'Android';
+        // } else if (/iphone|ipad|ipod/.test(userAgent)) {
+        //     downloadLink.href = "https://apps.apple.com/ng/app/parkway-wallet/id6451072719/"
+        //     return 'iOS';
+        // } else {
+        //     downloadLink.href = "#download-box"
+        //     return 'Unknown';
+        // }
+        if (/iphone|ipad|ipod/.test(userAgent)) {
+            downloadLink.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
             return 'iOS';
-        } else {
-            downloadLink.href = "#download-box"
-            return 'Unknown';
+        } else if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+            downloadLink.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
+            alert("Mac");
         }
     })
 }
