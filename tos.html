@@ -15,7 +15,7 @@
     <div class="navbarT">
         <div class="nav-itemsT">
             <a href="./landing-page.html"><img src="./images/parkway.svg" alt="" class="logo"></a>
-            <a href="" class="linkT downloadT">Download App!</a>
+            <a href="https://play.google.com/store/apps/details?id=com.parkway.yurwallet" target="_blank" class="linkT downloadT">Download App!</a>
         </div>
     </div>
     <section class="heroT">
@@ -623,25 +623,25 @@
         </div>
     </section>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
     <script>
+      $(document).ready(() => {
         const downloadLinkT = document.querySelector(".linkT")
 
         function isIOSorAndroid() {
-            const userAgent = navigator.userAgent.toLowerCase();
-            downloadLinkT.addEventListener ("click", () =>{
-                if (/android/.test(userAgent)) {
-                    downloadLinkT.href = "https://play.google.com/store/apps/details?id=com.parkway.yurwallet"
-                    return 'Android';
-                } else if (/iphone|ipad|ipod/.test(userAgent)) {
-                    downloadLinkT.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
-                    return 'iOS';
-                } else {
-                    downloadLinkT.href = "./landing-page.html#download-box"
-                    return 'Unknown';
-                }
-            })
+          const userAgent = navigator.userAgent.toLowerCase();
+          downloadLinkT.addEventListener ("click", () =>{
+            if (/iphone|ipad|ipod/.test(userAgent)) {
+              downloadLinkT.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
+              return 'iOS';
+            } else if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+              downloadLinkT.href = "https://apps.apple.com/app/parkway-wallet/id6451072719/"
+            }
+          })
         }
-       isIOSorAndroid();
+        isIOSorAndroid();
+      })
     </script>
 
 </body>
